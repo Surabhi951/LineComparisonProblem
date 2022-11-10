@@ -31,15 +31,28 @@ public class LineComparison {
         System.out.println("length of second line is: " + length2);
 
         checkLineEquality(length1 , length2);
+        compareTwoLines(length1, length2);
     }
 
     static void checkLineEquality(Double length1, Double length2) {
-        boolean result  = length2.equals(length1);
+        boolean result = length2.equals(length1);
         if (result){
             System.out.println("Lines are equal");
         }
         else{
             System.out.println("Lines are not equal");
+        }
+    }
+
+    static void compareTwoLines(Double length1, Double length2) {
+        int result = length2.compareTo(length1);
+        if (result == 0){
+            System.out.println("Two lines are equal");
+        } else if (result > 0) {
+            System.out.println("Line 2 is greater than line 1");
+        }
+        else {
+            System.out.println("line 1 is greater than line 2");
         }
     }
 }
