@@ -22,7 +22,7 @@ public class LineComparison {
         System.out.println("Length of line1 = " + length1);
         System.out.println("Length of line2 = " + length2);
 
-        if (length2.equals(length1)) {
+        if (length1.equals(length2)) {
             System.out.println("Both lines are equal");
         } else if (length1.compareTo(length2) > 0) {
             System.out.println("line1 is greater than line 2");
